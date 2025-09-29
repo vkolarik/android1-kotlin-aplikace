@@ -1,45 +1,24 @@
-# Planty - Android Task Management App
+# Planty - Android Aplikace pro Správu Úkolů
 
-## 📱 O projektu
+Android aplikace pro správu rutin a úkolů postavená na moderním Kotlin stacku.
 
-**Planty** je moderní Android aplikace pro správu rutin a úkolů napsaná v Kotlinu. Uživatelé vytvářejí objekty (rostliny, zvířata, atd.), přiřazují k nim rutiny a sledují jejich plnění s automatickým generováním úkolů a statistikami.
+## Technologie
 
-## 🛠️ Technologie
-
-- **Kotlin** + **Jetpack Compose** (moderní deklarativní UI)
-- **MVVM architektura** s **Dagger Hilt** (dependency injection)
+- **Kotlin** s **Jetpack Compose** pro deklarativní UI
+- **MVVM architektura** s **Dagger Hilt** dependency injection
 - **Room databáze** s Entity-Relationship modelem
-- **Material Design 3** + **Navigation Compose**
-- **Kotlin Coroutines** + **DataStore** + **Sentry** monitoring
+- **Material Design 3** a **Navigation Compose**
+- **Kotlin Coroutines**, **DataStore**, **Sentry** monitoring
 
-## 🏗️ Architektura
+## Architektura
 
-```
-├── database/     # Room databáze a DAO
-├── di/          # Dagger Hilt moduly  
-├── model/       # Entity-Relationship model
-├── ui/          # Jetpack Compose UI
-├── logic/       # Business logika
-└── navigation/  # Typově bezpečná navigace
-```
+MVVM pattern s Repository vrstvou, čisté oddělení odpovědností, dependency injection a reaktivní UI s Compose.
 
-## ✨ Klíčové funkce
+## Klíčové Funkce
 
-- **Správa objektů** s obrázky a popisy
-- **Automatické generování úkolů** na základě rutin
-- **Sledování streak** (počet dní bez vynechání)
-- **Kompletní statistiky** a progress tracking
-- **Lokalizace** (čeština/angličtina)
+Správa objektů s obrázky, automatické generování úkolů na základě rutin, sledování pokroku se streak systémem, komplexní statistiky a lokalizace.
 
-## 🎯 Proč je to dobré pro CV
-
-- **Moderní Android stack** - nejnovější technologie a best practices
-- **Čistá architektura** - MVVM, Repository pattern, DI
-- **Komplexní datový model** - Room s cizími klíči a relacemi
-- **Profesionální UI/UX** - Material Design 3, responsive design
-- **Production-ready** - error handling, monitoring, testování
-
-## 🚀 Spuštění
+## Sestavení a Spuštění
 
 ```bash
 ./gradlew assembleDebug
